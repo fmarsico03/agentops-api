@@ -1,15 +1,12 @@
 # AgentOps API: orquestador multi-agente en producción
 
 API REST asíncrona (FastAPI) que expone el **orquestador multi-agente del Módulo 6**
-([langgraph-multiagent-orchestrator](https://github.com/fmarsico03/langgraph-multiagent-orchestrator)).
 Un Supervisor coordina a un Investigador (Tavily) y a un Analista (cálculo y sentimiento) sobre Gemini, con:
 
 - **Endpoints que no bloquean:** `POST /tasks` encola y devuelve un `job_id` en milisegundos. El grafo corre en un worker.
 - **Redis** como única fuente de estado: jobs, cola, checkpoints de LangGraph (`AsyncRedisSaver`) y guardián de créditos.
 - **Observabilidad con LangSmith:** cada ejecución deja una traza con nodos, sub-agentes, tools, tokens y costo.
 - **Human-in-the-loop:** el grafo se detiene con `interrupt()` antes de gastar créditos en búsquedas pagas y espera `POST /tasks/{id}/approve`.
-
-> Pre-entrega 7: AI Engineer (Coderhouse)
 
 ## Arquitectura
 
@@ -26,7 +23,7 @@ flowchart LR
     G --> Gemini & Tavily
 ```
 
-### El grafo (M6 + gate HITL)
+### El grafo
 
 ```mermaid
 graph TD;
