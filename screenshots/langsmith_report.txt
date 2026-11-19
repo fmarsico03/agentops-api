@@ -1,0 +1,23 @@
+job       estado     costo USD    tokens  latencia
+6df1ff55  DONE        0.007452     10139    196.0s
+575dbfdc  DONE        0.039082     38881    125.8s
+68afa177  DONE        0.037864     26940    120.1s
+38343e03  DONE        0.016166     14130    120.3s
+8eb927bf  DONE        0.030054     29054    119.7s
+--------------------------------------------------
+costo medio por ejecución: 0.026123 USD  (total 0.130617)
+latencia por job  p50=120.3s  p95=181.9s
+latencia trazas raíz (start+resume) p95=105.2s
+
+Tokens por nodo del grafo:
+  researcher      in=  48373 out=  5781 llamadas= 35  (45% del total)
+  analyst         in=  24755 out=  4407 llamadas= 24  (24% del total)
+  supervisor      in=  20406 out=  5978 llamadas= 32  (22% del total)
+  synthesizer     in=   7267 out=  2177 llamadas= 19  (8% del total)
+
+Latencia media por nodo:
+  supervisor      media=  22.0s  max=  86.9s  n=16
+  researcher      media=  18.6s  max=  88.8s  n=25
+  analyst         media=   7.5s  max=  28.4s  n=21
+  synthesizer     media=   3.6s  max=   4.9s  n=5
+  human_approval  media=   0.0s  max=   0.0s  n=10

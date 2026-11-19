@@ -1,0 +1,90 @@
+{
+  "summary": {
+    "jobs": 5,
+    "done": 5,
+    "failed": 0,
+    "wall_clock_s": 198.86,
+    "enqueue_ms_p95": 44.3,
+    "e2e_s_p50": 122.52,
+    "e2e_s_p95": 184.8,
+    "processing_s_p50": 120.34,
+    "processing_s_p95": 182.02
+  },
+  "results": [
+    {
+      "idx": 1,
+      "job_id": "6df1ff55a64040b2956421e6bce63615",
+      "status": "DONE",
+      "enqueue_ms": 52.34190000919625,
+      "total_s": 198.86126849998254,
+      "processing_s": 196.06,
+      "approval": "approved",
+      "steps": 3,
+      "error": null,
+      "run_ids": [
+        "57d0da61-8606-449b-b224-19940318fde1",
+        "a8a002a7-9a33-4392-949a-c38696952bc9"
+      ]
+    },
+    {
+      "idx": 2,
+      "job_id": "575dbfdcccf14b8ea1ffa55086d6f4b4",
+      "status": "DONE",
+      "enqueue_ms": 11.417800036724657,
+      "total_s": 128.55711810005596,
+      "processing_s": 125.855,
+      "approval": "approved",
+      "steps": 4,
+      "error": null,
+      "run_ids": [
+        "6a620c73-a4b0-47b5-807e-8c97f8f3ada3",
+        "7f3ee5fb-3a60-4cf8-9983-11cf4fcd064d"
+      ]
+    },
+    {
+      "idx": 3,
+      "job_id": "68afa177cdfe40eaa627432ff4f92041",
+      "status": "DONE",
+      "enqueue_ms": 11.82020001579076,
+      "total_s": 122.52170729998033,
+      "processing_s": 120.227,
+      "approval": "approved",
+      "steps": 3,
+      "error": null,
+      "run_ids": [
+        "011a2ed1-9f38-4f88-bd77-f9a2f62d47e5",
+        "c2ebf589-d27f-4fbb-a07c-5288a0d11095"
+      ]
+    },
+    {
+      "idx": 4,
+      "job_id": "38343e0369d04fe2b115e45c5e0f67a2",
+      "status": "DONE",
+      "enqueue_ms": 12.224899954162538,
+      "total_s": 122.52045989996986,
+      "processing_s": 120.342,
+      "approval": "approved",
+      "steps": 3,
+      "error": null,
+      "run_ids": [
+        "91621943-713c-4f7b-b709-e6561360fe8a",
+        "2f80dabb-50fe-4bd7-a839-fecde991b692"
+      ]
+    },
+    {
+      "idx": 5,
+      "job_id": "8eb927bf88be482bbea6f8a918d460fb",
+      "status": "DONE",
+      "enqueue_ms": 8.695900032762438,
+      "total_s": 122.52067860000534,
+      "processing_s": 119.705,
+      "approval": "approved",
+      "steps": 3,
+      "error": null,
+      "run_ids": [
+        "2b702d95-1358-445e-940f-2c0546a800aa",
+        "1ba5c1ca-2f59-4785-9fbe-f5db9aae3bc1"
+      ]
+    }
+  ]
+}
